@@ -2,12 +2,10 @@ package org.example.spingbootquickstat.controller;
 
 import org.example.spingbootquickstat.Service.PersonService;
 import org.example.spingbootquickstat.dao.Person;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 public class PersonController {
@@ -23,8 +21,7 @@ public class PersonController {
         return personService.getAllPersons();
     }
     @PostMapping("/person_by_name")
-    public List<Person> searchByName(@RequestParam String name) {
-        System.out.println("发送成功！");
-        return personService.searchByName(name);
+    public List<Person> searchByName(@RequestBody Person person) {
+        return personService.searchByName(person.getName());
     }
 }
