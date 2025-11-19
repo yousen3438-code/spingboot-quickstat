@@ -22,6 +22,11 @@ public class PersonController {
     }
     @PostMapping("/person_by_name")
     public List<Person> searchByName(@RequestBody Person person) {
-        return personService.searchByName(person.getName());
+
+        System.out.println(person);
+        if(person.getName()!=null && person.getName().length()>0) {
+            return personService.searchByName(person.getName());
+        }
+        throw new IllegalArgumentException("名字不能为空");
     }
 }
