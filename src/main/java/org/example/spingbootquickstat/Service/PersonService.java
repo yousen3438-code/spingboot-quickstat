@@ -6,23 +6,11 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
-public class PersonService {
-    private final PersonMapper personMapper;
+public interface PersonService {
 
-    public PersonService(PersonMapper personMapper) {
-        this.personMapper = personMapper;
-    }
+    List<Person> getAllPersons();
 
-    public List<Person> getAllPersons() {
-        return personMapper.findAll();
-    }
+    Person getPersonById(Integer id);
 
-    public Person getPersonById(Integer id) {
-        return personMapper.findById(id);
-    }
-
-    public List<Person> searchByName(String name) {
-        return personMapper.findByName(name);
-    }
+    List<Person> searchByName(String name) ;
 }
