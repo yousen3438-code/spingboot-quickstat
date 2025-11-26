@@ -1,6 +1,6 @@
 package org.example.spingbootquickstat.Service;
 
-import org.example.spingbootquickstat.dao.Person;
+import org.example.spingbootquickstat.entity.Person;
 
 import java.util.List;
 

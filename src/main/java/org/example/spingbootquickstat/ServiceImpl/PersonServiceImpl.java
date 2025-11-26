@@ -2,7 +2,7 @@ package org.example.spingbootquickstat.ServiceImpl;
 
 import org.example.spingbootquickstat.Mapper.PersonMapper;
 import org.example.spingbootquickstat.Service.PersonService;
-import org.example.spingbootquickstat.dao.Person;
+import org.example.spingbootquickstat.entity.Person;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

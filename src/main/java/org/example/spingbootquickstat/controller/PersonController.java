@@ -1,11 +1,10 @@
 package org.example.spingbootquickstat.controller;
 
 import org.example.spingbootquickstat.Service.PersonService;
-import org.example.spingbootquickstat.dao.Person;
+import org.example.spingbootquickstat.entity.Person;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Map;
 
 @RestController
 public class PersonController {

@@ -2,7 +2,7 @@ package org.example.spingbootquickstat.Mapper;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
-import org.example.spingbootquickstat.dao.User;
+import org.example.spingbootquickstat.entity.User;
 
 @Mapper
 public interface UserMapper {

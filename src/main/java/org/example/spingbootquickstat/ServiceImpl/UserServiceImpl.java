@@ -1,6 +1,5 @@
 package org.example.spingbootquickstat.ServiceImpl;
-import org.example.spingbootquickstat.dao.User;
-import org.springframework.context.annotation.Bean;
+import org.example.spingbootquickstat.entity.User;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.example.spingbootquickstat.Mapper.UserMapper;
 import org.example.spingbootquickstat.Service.UserService;

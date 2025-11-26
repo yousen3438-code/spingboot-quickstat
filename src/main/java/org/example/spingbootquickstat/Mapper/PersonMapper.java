@@ -2,7 +2,7 @@ package org.example.spingbootquickstat.Mapper;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
-import org.example.spingbootquickstat.dao.Person;
+import org.example.spingbootquickstat.entity.Person;
 
 import java.util.List;
 

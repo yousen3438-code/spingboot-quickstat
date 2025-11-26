@@ -1,4 +1,4 @@
-package org.example.spingbootquickstat.dao;
+package org.example.spingbootquickstat.entity;
 
 import lombok.Data;
 
@@ -7,4 +7,5 @@ public class User {
     private Long id;
     private String username;
     private String password;
+    private String token;
 }

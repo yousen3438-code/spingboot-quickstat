@@ -1,4 +1,4 @@
-package org.example.spingbootquickstat.dao;
+package org.example.spingbootquickstat.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
